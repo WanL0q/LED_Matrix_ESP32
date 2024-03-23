@@ -2,8 +2,8 @@
 Controlling LED Screen with ESP32
 ![Screenshot 2024-03-22 094515](https://github.com/WanL0q/LED_Sceen_ESP32/assets/134664967/50ce7511-66b9-4182-a1b7-aac662588595)
 # Convert .mp4 to .bin
-- Move the .mp4 file to be converted into the mp4_2_bin folder
-- Run the tool.py file
+- Move the .mp4 file to be converted into the *mp4_2_bin* folder
+- Run the *tool.py* file
 - Note:
   - Files saved to the memory card must have names in the format 'video + video sequence number . mp4
   - Video in .mp4 format, 30fps, and maximum duration of 8 seconds
