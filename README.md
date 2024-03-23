@@ -36,7 +36,7 @@ Controlling LED Screen with ESP32
 | **Location**   | **Function**  | **Data type**           | **Description** |
 | byte[0]        | Emoji mode    | unsigned int8           | [0,255]         |
 | byte[1]        | Number of video | unsigned int8         | 0x00            |
-| byte[2]        | error         | bit[0-1]                | 0: Normal       |
+| byte[2]        | Error         | bit[0-1]                | 0: Normal       |
 |                |               |                         | 1: Unable to boot SD card |
 |                |               |                         | 2: File not found |
 |                |               | bit[2-7]                | Reserve         |
