@@ -17,7 +17,7 @@ Controlling LED Screen with ESP32
 | byte[6]        |  Reserve      | -                       | 0x00            |
 | byte[7]        |  Reserve      | -                       | 0x00            |
 
-## Led matrix Command Frame 
+## Led matrix Feedback Frame 
 
 | **ID package** | **Cycle(ms)** | **Receive-timeout(ms)** | **Data length** |
 |:--------------:|:-------------:|:-----------------------:|:---------------:|
@@ -25,8 +25,10 @@ Controlling LED Screen with ESP32
 | **Location**   | **Function**  | **Data type**           | **Description** |
 | byte[0]        | Emoji mode    | unsigned int8           | [0,255]         |
 | byte[1]        | Number of video | unsigned int8         | 0x00            |
-| byte[2]        | error         | bit[0]                  | Communication SD failure (0 Normal, 1 failure) |
-|                |               | bit[1-7]                | Reserve         |
+| byte[2]        | error         | bit[0-1]                  | 0: Normal       |
+|                |               |                         | 1: Unable to boot SD card |
+|                |               |                         | 2: File not found |
+|                |               | bit[2-7]                | Reserve         |
 | byte[3]        |  Reserve      | -                       | 0x00            |
 | byte[4]        |  Reserve      | -                       | 0x00            |
 | byte[5]        |  Reserve      | -                       | 0x00            |
