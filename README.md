@@ -6,7 +6,7 @@ Controlling LED Screen with ESP32
 - Run the *tool.py* file
 - Note:
   - Files saved to the memory card must have names in the format 'video + video sequence number . mp4
-  - Video in .mp4 format, 30fps, and maximum duration of 8 seconds
+  - Video in .mp4 format, 30 fps, and maximum duration of 8s
 # CAN Frames (Device ID: 0x3A)
 ## Led Matrix Command Frame
 | **ID package** | **Cycle(ms)** | **Receive-timeout(ms)** | **Data length** |
